@@ -5,7 +5,7 @@ const cardContainer = document.getElementById("productos-f1")
 productos.forEach((prod) => {
 
     cardContainer.innerHTML += `
-            <div class="card" style="width: 100%">
+            <div class="card-main" style="width: 100%">
                     <img src="${prod.imagen}" class="card-img-top" alt="${prod.titulo}">
                     <div class="card-body">
                     <h5 class="card-title">${prod.precio}</h5>

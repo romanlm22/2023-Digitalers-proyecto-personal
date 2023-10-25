@@ -7,7 +7,7 @@ const loginForm = document.getElementById("login")
         const emailInput = event.target.elements.email.value;
         const passwordInput = event.target.elements.password.value;
     
-        const userExist = users.find(usr => {
+        const userExist = users.find((usr) => {
     
             if(usr.email === emailInput) {
                 return true

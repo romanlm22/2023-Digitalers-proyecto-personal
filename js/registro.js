@@ -1,11 +1,4 @@
-/*const user = JSON.parse(localStorage.getItem("currentUser"))
 
-if(!user || user.role !== 'ROLE_ADMIN') {
-
-    window.location.href = '/index.html'
-
-}
-*/
 const usuariosR = JSON.parce(localStorage.getItem("users"))
 
 const formularioDeRegistro = document.getElementById("formulario-registro")

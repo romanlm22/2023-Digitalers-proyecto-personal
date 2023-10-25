@@ -37,29 +37,29 @@ if(  JSON.parse(localStorage.getItem("productos")) === null  ) {
 
 const userInicio = [
     {
-        fullname: 'Daniel Lee',
+        fullname: 'Roman Lopez',
         email: 'admin@admin.com',
-        id: '6',
+        id: '22',
         password: 'admin',
         role: "ROLE_ADMIN"
     },
     {
-        fullname: 'Samantha Davis',
-        email: 'samantha.davis@example.com',
-        id: '7',
-        password: 'alfabeta',
+        fullname: 'Fabricio Molina',
+        email: 'fabri.molina@example.com',
+        id: '23',
+        password: 'bocajuniors',
         role: "ROLE_CLIENT"
     },
     {
-        fullname: 'James Moore',
-        email: 'james.moore@example.com',
+        fullname: 'Lana Fernandez',
+        email: 'lanafernandez@example.com',
         id: '8',
-        password: 'alfabeta',
+        password: 'riverplate',
         role: "ROLE_CLIENT"
     },
     {
-        fullname: 'Isabella Taylor',
-        email: 'isabella.taylor@example.com',
+        fullname: 'Diego Gonzalez',
+        email: 'diego.gonzalez@example.com',
         id: '9',
         password: 'alfabeta',
         role: "ROLE_CLIENT"

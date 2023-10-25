@@ -44,6 +44,10 @@ formularioUsuariosHTML.addEventListener('submit', (evt) => {
         adminUsuarios[index] = nuevoUsuarios;
         idEditar = undefined;
 
+        if(adminUsuarios[index].role === "ROLE_ADMIN"){
+            nuevoUsuarios.roles === "ROLE_ADMIN";
+            localStorage.setItem("currenUser", JSON.stringify(nuevoUsuarios))
+        }
 
         btn.innerText = "Agregar Usuario"
         btn.classList.remove("btn-success")
@@ -110,7 +114,7 @@ inputFiltrarHTML.addEventListener('keyup', (evt) => {
 })
 
 
-const borrarProducto = (idABuscar) => {
+const borrarUsuarios = (idABuscar) => {
     Swal.fire({
         title: 'Desea borrar Usuario',
         icon: 'error',
@@ -122,8 +126,8 @@ const borrarProducto = (idABuscar) => {
       }).then((result) => {
 
         if(result.isConfirmed) {
-            const indiceEncontrado = adminUsuarios.findIndex((productoFindIndex) => {
-                if(productoFindIndex.id === idABuscar) {
+            const indiceEncontrado = adminUsuarios.findIndex((usuariosFindIndex) => {
+                if(usuariosFindIndex.id === idABuscar) {
                     return true
                 }
                 return false
