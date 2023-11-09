@@ -49,27 +49,36 @@
       </nav>
 </header>
 
-    <div class="container row g-0" style="padding: 1rem;">
-        <form id="formulario-registro">
-            <div class="mb-3">
-                <label for="nombre" class="form-label">Nombre</label>
-                <input type="text" name="nombre" class="form-control" id="nombre" placeholder="Juan Gonzalez" required minlength="2" maxlength="50">
-              </div>
-            <div class="mb-3">
-              <label for="email" class="form-label">Correo electornico</label>
-              <input type="email" name="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="JuanGonzalez@gmail.com" required minlength="10" maxlength="85">
-            </div>
-            <div class="mb-3">
+    
+<div class="login-container container d-flex align-items-center">
+
+  <div class="card p-3" style="width: 25rem;">
+    <h5 class="card-title">Registrese</h5>
+      <form id="login">
+          <!-- Input -->
+          <div class="mb-3">
+
+              <label for="email" class="form-label">Email</label>
+              <input type="email" name="email" class="form-control" id="email" placeholder="user@gmail.com"
+              required minlength="3" maxlength="70" pattern="[A-Za-z0-9._+\-']+@[A-Za-z0-9.\-]+\.[A-Za-z]{2,}$">
+          </div>
+          <!-- Input -->
+          <div class="mb-3">
               <label for="password" class="form-label">Contraseña</label>
-              <input type="password" name="password" class="form-control" id="password">
-            </div>
-            <div class="mb-3 form-check">
-              <input type="checkbox" class="form-check-input" id="exampleCheck1">
-              <label class="form-check-label" for="exampleCheck1">Acepta los terminos y condiciones</label>
-            </div>
-            <button type="submit" class="btn btn-primary">Registrase</button>
-          </form>
-    </div>
+              <input type="password" name="password" class="form-control" id="password" placeholder="****"
+              required minlength="3" maxlength="70">
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Acepta los terminos y condiciones</label>
+          </div>
+
+          <button class="btn btn-primary" type="submit">Crear cuenta</button>
+
+      </form>
+  </div>
+</div>
+
 
 
 

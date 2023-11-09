@@ -79,13 +79,17 @@ function pintarProductos(arrayAPintar) {
     arrayAPintar.forEach(function(conso, index) {
         tableBodyHTML.innerHTML += 
             `<tr>
+                <td class="card-conteiner">
+                <td class="card"> 
                 <td class="table-image">
                         <img src="${conso.imagen}" alt="${conso.titulo}">
                 </td>
+                <td class="card-main">
                 <td class="table-title">${conso.titulo}</td>
                 <td class="table-description">${conso.descripcion}</td>
                 <td class="table-price">${conso.precio}</td>
                 <td class="table-category">${conso.categoria}</td>
+                </td>
                 <td >
                     <div class="d-flex gap-1">
                         <button class="btn-delete btn btn-danger btn-sm" onclick="borrarProducto('${conso.id}')">
@@ -96,6 +100,8 @@ function pintarProductos(arrayAPintar) {
                         </button>
                     </div>
                     
+                </td>
+                </td>
                 </td>
             </tr>`
     })
